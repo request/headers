@@ -29,7 +29,7 @@ Headers.prototype.remove = function (header) {
 Headers.prototype.toObject = function () {
   var headers = {}
   for (var key in this) {
-    if (typeof this[key] !== 'function') {
+    if (this[key] && typeof this[key] !== 'function') {
       headers[key] = this[key]
     }
   }
