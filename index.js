@@ -1,6 +1,6 @@
 
 function Headers (headers) {
-  for (var key in headers) {
+  for (var key in headers || {}) {
     this[key] = headers[key]
   }
 }
@@ -29,7 +29,7 @@ Headers.prototype.remove = function (header) {
 Headers.prototype.toObject = function () {
   var headers = {}
   for (var key in this) {
-    if (this[key] && typeof this[key] !== 'function') {
+    if (this[key] !== undefined && typeof this[key] !== 'function') {
       headers[key] = this[key]
     }
   }
