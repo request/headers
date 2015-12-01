@@ -1,9 +1,10 @@
 {
-  "name": "@http/headers",
+  "name": "@request/headers",
   "version": "0.1.0",
   "description": "HTTP Caseless Headers",
 
   "keywords": [
+    "request",
     "http",
     "https",
     "caseless",
@@ -11,13 +12,13 @@
   ],
 
   "license": "Apache-2.0",
-  "homepage": "https://github.com/node-http/headers",
+  "homepage": "https://github.com/request/headers",
 
   "author": "Simeon Velichkov <simeonvelichkov@gmail.com> (http://simov.github.io)",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-http/headers.git"
+    "url": "https://github.com/request/headers.git"
   },
 
   "dependencies": {},
